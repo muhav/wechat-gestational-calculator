@@ -21,25 +21,27 @@ Page({
     cc: '',
     side: 0
   },
+  
   //事件处理函数
   bindViewTap: function () {
     wx.navigateTo({
       url: '../logs/logs'
     })
   },
+
   getUserInfo: function (e) {
     console.log(e)
     app.globalData.userInfo = e.detail.userInfo
     console.log(app.globalData.userInfo)
-    this.setData({
-      userInfo: e.detail.userInfo,
-    })
+
     if (app.globalData.userInfo) (
       this.setData({
         hasUserInfo: true,
+        userInfo: e.detail.userInfo,
       })
     )
   },
+
   onLoad: function () {
     if (app.globalData.userInfo) {
       this.setData({
@@ -86,6 +88,7 @@ Page({
       weekday: days[d.getDay()]
     })
   },
+
   bindInput: function (e) {
     var dic = new Array(0, 7, 14, 21, 28, 35, 42, 49, 56, 63, 70,
       77, 84, 91, 98, 105, 112, 119, 126, 133, 140, 147,
@@ -138,6 +141,7 @@ Page({
       }
     }
   },
+
   formSubmit: function (e) {
     var dic = new Array(0, 7, 14, 21, 28, 35, 42, 49, 56, 63, 70,
                         77, 84, 91, 98, 105, 112, 119, 126, 133, 140, 147,
@@ -227,8 +231,8 @@ Page({
         //  side: 1
         //})
       }
-
     }
+
     //上下方向滑动
     else {
       var now = new Date();

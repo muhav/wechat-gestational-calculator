@@ -1,6 +1,6 @@
 /**index.wxss**/
 
-#button {
+#block {
   position: absolute;
   width: 1000rpx;
   height: 100vh;

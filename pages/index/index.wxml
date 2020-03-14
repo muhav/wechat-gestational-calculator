@@ -1,4 +1,5 @@
 <!--index.wxml-->
+
 <!--
 <view class="container">
   <view class="userinfo">
@@ -13,10 +14,12 @@
   </view>
 </view>
 -->
+
+
 <view class="container" bindtouchstart="handletouchtart" bindtouchmove="handletouchmove" bindtouchend="handletouchend">
   <div id='shadow'></div>
 
-  <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo" id='button'></button>
+  <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo" id='block'></button>
 
   <!-- Side 0 -->
   <div wx:if="{{side==0}}" class="cover-view" id='today1'>
