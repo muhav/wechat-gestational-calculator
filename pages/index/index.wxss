@@ -1,0 +1,214 @@
+/**index.wxss**/
+
+#button {
+  position: absolute;
+  width: 1000rpx;
+  height: 100vh;
+  z-index: 200;
+  opacity: 0;
+}
+
+#shadow {
+  width: 850rpx;
+  height: 50rpx;
+  position: absolute;
+  top: -30rpx;
+  box-shadow: 0 20rpx 40rpx -12rpx #78909C;
+  background-color: #607D8B;
+  margin-bottom: 20rpx;
+  z-index: 100;
+}
+
+.small {
+  width: 400rpx;
+  float: left;
+  font-size: 100rpx;
+}
+
+.cover-view {
+  background-color: #ffffff;
+  color: #546E7A;
+  width: 450rpx;
+  padding: 20rpx 50rpx;
+  border: 1rpx solid #607D8B;
+  border-radius: 30rpx;
+  box-shadow: 4rpx 6rpx 20rpx #78909C;
+  z-index: 50;
+  margin-top: 100rpx;
+  padding-top: 40rpx;
+}
+
+#result {
+  margin-top: 100rpx;
+  margin-bottom: 100rpx;
+}
+
+.h {
+  width: 450rpx;
+  float: left;
+  font-size: 50rpx;
+}
+
+#d {
+  margin-left: 40rpx;
+}
+
+#rd {
+  margin-right: 40rpx;
+}
+
+#w {
+  width: 450rpx;
+  font-size: 70rpx;
+}
+
+.bt {
+  float: left;
+  line-height: 130rpx;
+  font-size: 100rpx;
+}
+
+.st {
+  float: left;
+  margin-top: 60rpx;
+  margin-left: 10rpx;
+  font-size: 40rpx;
+}
+
+#p {
+  margin-top: 100rpx;
+  margin-bottom: 10rpx;
+  font-size: 40rpx;
+}
+
+#x {
+  height: 130rpx;
+  line-height: 130rpx;
+  font-size: 100rpx;
+}
+
+#pos {
+  width: 350rpx;
+  height: 350rpx;
+}
+
+#r {
+  margin-bottom: 20rpx;
+}
+
+.a {
+  position: relative;
+  top: -468rpx;
+  animation: up 1s;
+}
+
+#today1a {
+  position: relative;
+  top: -500rpx;
+  animation: up1 1s;
+}
+
+#today1b {
+  position: relative;
+  top: -468rpx;
+  animation: up2 1.5s;
+  z-index: 75;
+  margin-top: 0;
+  margin-bottom: 100rpx;
+}
+
+@keyframes up{
+  /**开始（可以用百分比表示）*/
+  0% {
+    top: 0;
+  }
+  15% {
+    top: 0;
+  }
+  /**结束（可以用百分比表示）*/
+  100% {
+    top: -468rpx;
+  }
+}
+
+@keyframes up1 {
+  /**开始（可以用百分比表示）*/
+  from {
+    top: 0;
+  }
+  /**结束（可以用百分比表示）*/
+  to {
+    top: -500rpx;
+  }
+}
+
+@keyframes up2 {
+  /**开始（可以用百分比表示）*/
+  0% {
+    top: 200rpx;
+  }
+  /**结束（可以用百分比表示）*/
+  100% {
+    top: -468rpx;
+  }
+}
+
+.b {
+  position: relative;
+  top: 0;
+  animation: down 1s;
+}
+
+#today2a {
+  position: relative;
+  top: 0;
+  animation: down1 1.5s;
+}
+
+#today2b {
+  position: relative;
+  top: 200rpx;
+  animation: down2 1s;
+  z-index: 75;
+  margin-top: 0;
+  margin-bottom: 100rpx;
+}
+
+@keyframes down{
+  /**开始（可以用百分比表示）*/
+  0% {
+    top: -468rpx;
+  }
+  15% {
+    top: -468rpx;
+  }
+  /**结束（可以用百分比表示）*/
+  100% {
+    top: 0;
+  }
+}
+
+@keyframes down1 {
+  /**开始（可以用百分比表示）*/
+  0% {
+    top: -500rpx;
+  }
+  20% {
+    top: -500rpx;
+  }
+  /**结束（可以用百分比表示）*/
+  100% {
+    top: 0;
+  }
+}
+
+@keyframes down2 {
+  /**开始（可以用百分比表示）*/
+  0% {
+    top: -468rpx;
+  }
+  /**结束（可以用百分比表示）*/
+  100% {
+    top: 200rpx;
+  }
+}
