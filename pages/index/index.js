@@ -238,15 +238,17 @@ Page({
       var now = new Date();
       if (ty < -15) {
         console.log("向上滑动");
-        this.setData({
-          side: 1,
-          next: now.getTime() + 1200
-        })
+        if (this.data.side != 0) {
+          this.setData({
+            side: 1,
+            next: now.getTime() + 1200
+          })
+        }
         this.data.delay = 11;
       }
       else if (ty > 15) {
         console.log("向下滑动");
-        if (this.data.side != 0) {
+        if (true) {
           this.setData({
             side: 2,
             next: now.getTime() + 1200

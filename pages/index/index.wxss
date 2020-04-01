@@ -12,12 +12,29 @@
   width: 850rpx;
   height: 50rpx;
   position: absolute;
-  top: -30rpx;
+  top: -40rpx;
   box-shadow: 0 20rpx 40rpx -12rpx #78909C;
   background-color: #607D8B;
   margin-bottom: 20rpx;
   z-index: 100;
 }
+
+/***
+#shadow {
+  width: 850rpx;
+  height: 50rpx;
+  position: absolute;
+  top: -40rpx;
+  margin-bottom: 20rpx;
+  z-index: 100;
+
+  background-color: #efeeee;
+  border: 2rpx solid rgba(255, 255, 255, 0.20);
+  border-radius: 24rpx;
+  box-shadow: -12rpx -12rpx 52rpx 0 rgba(255, 255, 255, 0.83),
+              12rpx 12rpx 32rpx 0 rgba(217, 210, 200, 0.51);
+}
+***/
 
 .small {
   width: 400rpx;
@@ -25,6 +42,7 @@
   font-size: 100rpx;
 }
 
+/***
 .cover-view {
   background-color: #ffffff;
   color: #546E7A;
@@ -36,6 +54,26 @@
   z-index: 50;
   margin-top: 100rpx;
   padding-top: 40rpx;
+}
+***/
+
+page {
+  background-color: #efeeee;
+}
+
+.cover-view {
+  color: #546E7A;
+  width: 450rpx;
+  padding: 20rpx 50rpx;
+  margin-top: 100rpx;
+  padding-top: 40rpx;
+  z-index: 50;
+  
+  background-color: #efeeee;
+  border: 2rpx solid rgba(255, 255, 255, 0.20);
+  border-radius: 24rpx;
+  box-shadow: -12rpx -12rpx 52rpx 0 rgba(255, 255, 255, 0.83),
+              12rpx 12rpx 32rpx 0 rgba(217, 210, 200, 0.51);
 }
 
 #result {
@@ -76,7 +114,7 @@
 }
 
 #p {
-  margin-top: 100rpx;
+  margin-top: 70rpx;
   margin-bottom: 10rpx;
   font-size: 40rpx;
 }
@@ -96,10 +134,28 @@
   margin-bottom: 20rpx;
 }
 
+.a0 {
+  position: relative;
+  top: -468rpx;
+}
+
 .a {
   position: relative;
   top: -468rpx;
   animation: up 1s;
+}
+
+#today0a {
+  position: relative;
+  top: -500rpx;
+}
+
+#today0b {
+  position: relative;
+  top: -468rpx;
+  z-index: 75;
+  margin-top: 0;
+  margin-bottom: 100rpx;
 }
 
 #today1a {
@@ -145,6 +201,9 @@
 @keyframes up2 {
   /**开始（可以用百分比表示）*/
   0% {
+    top: 300rpx;
+  }
+  20% {
     top: 200rpx;
   }
   /**结束（可以用百分比表示）*/
@@ -167,7 +226,7 @@
 
 #today2b {
   position: relative;
-  top: 200rpx;
+  top: 300rpx;
   animation: down2 1s;
   z-index: 75;
   margin-top: 0;
@@ -208,7 +267,10 @@
     top: -468rpx;
   }
   /**结束（可以用百分比表示）*/
-  100% {
+  80% {
     top: 200rpx;
+  }
+  100% {
+    top: 300rpx;
   }
 }

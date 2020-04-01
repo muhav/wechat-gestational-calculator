@@ -1,35 +1,19 @@
 <!--index.wxml-->
 
-<!--
-<view class="container">
-  <view class="userinfo">
-    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
-    <block wx:else>
-      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-    </block>
-  </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
-  </view>
-</view>
--->
-
-
 <view class="container" bindtouchstart="handletouchtart" bindtouchmove="handletouchmove" bindtouchend="handletouchend">
   <div id='shadow'></div>
 
   <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo" id='block'></button>
 
   <!-- Side 0 -->
-  <div wx:if="{{side==0}}" class="cover-view" id='today1'>
+  <div wx:if="{{side==0}}" class="cover-view" id='today0a'>
     <text class='h'>今天</text>
     <text class='bt' id='w'>{{weekday}}</text>
     <text class='bt' id='m'>{{month}}</text><text class='st'>月</text>
     <text class='bt' id='d'>{{date}}</text><text class='st'>日</text>
   </div>
 
-  <div wx:if="{{side==0}}" class="cover-view">
+  <div wx:if="{{side==0}}" class="a0 cover-view">
     <text class='h'>输入</text>
     <form bindsubmit="formSubmit">
       <view class="page-section">
@@ -45,7 +29,7 @@
     </form>
   </div>
 
-  <div wx:if="{{has_result && side==0}}" class="cover-view" id='result'>
+  <div wx:if="{{has_result && side==0}}" class="a0 cover-view" id='result'>
     <text class='h' id='r'>结果</text>
     <text wx:if="{{error_msg}}" class='bt'>{{error_msg}}</text>
     <span wx:if="{{!error_msg}}">
@@ -56,9 +40,9 @@
     </span>
   </div>
 
-  <div wx:if="{{!has_result && side==0}}" id='pos'></div>
+  <div wx:if="{{!has_result && side==0}}" class="a0" id='pos'></div>
 
-  <div wx:if="{{side==0}}" class="cover-view" style='visibility:hidden'>
+  <div wx:if="{{side==0}}" class="cover-view" id='today0b'>
     <text class='h'>今天</text>
     <text class='bt' id='w'>{{weekday}}</text>
     <text class='bt' id='m'>{{month}}</text><text class='st'>月</text>
