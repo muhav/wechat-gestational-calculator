@@ -221,7 +221,7 @@ page {
 #today2a {
   position: relative;
   top: 0;
-  animation: down1 1.5s;
+  animation: down1 2s;
 }
 
 #today2b {
