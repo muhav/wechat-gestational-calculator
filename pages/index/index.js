@@ -136,7 +136,7 @@ Page({
         ph: x
       })
 
-      if (this.data.side != 1) {
+      if (this.data.side == 2) {
         wx.hideKeyboard();
       }
     }
