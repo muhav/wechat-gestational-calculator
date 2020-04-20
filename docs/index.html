@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <title>Date Calculator</title>
+</head>
+
+<body id="main-body">
+
+<header>
+  <nav class="navbar navbar-light bg-light">
+    <a class="navbar-brand" href="http://wuhu.date-calculator.webpage.bugstop.site">Calculator</a>
+  </nav>
+</header>
+
+<div class="container">
+  <h1 class="text-center font-weight-light d-none d-sm-block" id="menu-head">Calculator</h1>
+
+  <form class="row">
+    <div class="form-group row col-lg-6">
+      <div class="col-1"></div>
+      <label class="col-2 col-form-label col-form-label-lg">Today</label>
+      <div class="col-12 d-block d-sm-none"></div>
+      <div class="col-1 d-block d-sm-none"></div>
+      <div class="col-sm-8 col-10">
+        <input type="number" min="0101" max="1231" class="form-control form-control-lg" id="today" placeholder="1024">
+      </div>
+    </div>
+
+    <div class="form-group row col-lg-6">
+      <div class="col-1"></div>
+      <label class="col-2 col-form-label col-form-label-lg">Input</label>
+      <div class="col-12 d-block d-sm-none"></div>
+      <div class="col-1 d-block d-sm-none"></div>
+      <div class="col-sm-8 col-10">
+        <input type="number" min="0101" max="1231" class="form-control form-control-lg" id="date" placeholder="MMDD">
+      </div>
+    </div>
+
+    <div class="form-group row col-lg-6">
+      <div class="col-1"></div>
+      <label class="col-2 col-form-label col-form-label-lg">Result</label>
+      <div class="col-12 d-block d-sm-none"></div>
+      <div class="col-1 d-block d-sm-none"></div>
+      <div class="col-sm-8 col-10">
+        <input class="form-control form-control-lg" id="result" readonly>
+      </div>
+    </div>
+  </form>
+</div>
+
+<footer>
+  <div class="accordion" id="accordionExample">
+    <div class="card">
+      <div class="card-header" id="headingThree">
+        <h2 class="mb-0">
+          <button class="btn btn-link collapsed text-decoration-none" type="button" data-toggle="collapse"
+                  data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" id="foot">
+            Copyright &copy; 2020 bugstop.<span class="d-none d-sm-inline"> All Rights Reserved.</span>
+          </button>
+        </h2>
+      </div>
+      <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+        <div class="card-body">
+          <span>This page is hosted by <a href="https://pages.github.com" class="text-decoration-none">GitHub Pages</a>
+            from <a href="https://github.com/bugstop/wechat-miniprogram-wuhu" class="text-decoration-none">
+              this GitHub repository</a> maintained by <a href="https://github.com/bugstop"
+                                                          class="text-decoration-none">bogstop.</a></span>
+          <span class="d-none d-sm-block">Source code licensed under the
+            <a href="https://github.com/zTrix/sata-license" class="text-decoration-none">SATA License</a> and
+            <a href="https://github.com/996icu/996.ICU" class="text-decoration-none">Anti 996 License.</a></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/jquery-3.4.1.slim.min.js"></script>
+<script src="umd/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/img.js"></script>
+<script src="js/jsfile.js"></script>
+
+</body>
+</html>
