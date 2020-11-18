@@ -10,7 +10,7 @@ if (t < 10) {
   t = '0' + t;
 }
 
-today.value = m + t;
+today.value = '' + m + t;
 /* date.placeholder = m + t; */
 
 date.oninput = function () {
