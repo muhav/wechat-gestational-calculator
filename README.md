@@ -1,8 +1,8 @@
 ## 孕周计算器
 
-**网页版：**[点此链接](http://calc.demo.lmh.li/)
+<strong>网页版：</strong>[点此链接](http://calc.demo.lmh.li/)
 
-**小程序：**孕周计算助手
+<strong>小程序：</strong>孕周计算助手
 
 <sub>备份仓库，仅供参考。</sub>
 
