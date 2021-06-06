@@ -1,2 +1,9 @@
-index.htm linguist-generated
-docs/js/* linguist-vendored
+*.wxml linguist-language=html
+*.wxss linguist-language=css
+
+webpage/js/* linguist-vendored=true
+webpage/css/* linguist-vendored=true
+webpage/js/script.js linguist-vendored=false
+webpage/css/styles.css linguist-vendored=false
+
+index.htm linguist-generated=true
